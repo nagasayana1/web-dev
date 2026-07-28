@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>       
+</head>
+
+<!-- Linker CSS -->
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="utils.css">
+
+<!-- Font CSS -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+<body>
+    
+
+ <header>
+    <nav>
+        <div class="left">
+           NagaSayana's Portfolio
+        </div>
+        <div class="right">
+            <Ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About Me</a></li>
+                <li><a href="/">Services</a></li>
+                <li><a href="/">Projects</a></li>
+                <li><a href="/">Contact Me</a></li>
+            </Ul>
+        </div>
+    </nav>
+ </header>
+
+<main>
+    <section class="firstSection">
+        <div class="leftSection"> 
+            Hi, My name is <span class="gradient">Nagasayana</span> 
+            <div>I am a software developer</div>
+
+              <span id="element"></span>
+            <div class="button">
+                <button class="btns">Download Resume</button>
+                <button class="btns">Visit LinkedIn</button>  
+            </div>
+            
+        </div>
+       
+        <div class="rightSection"> 
+            <img src="assets/web_dev_logo.png" alt="image of a Coder" class="dev_img">
+        </div>
+    </section>
+
+   <hr>
+    <section class="secondSection">
+        <span class="text-white-smoke">Contributions That I Made</span>
+        <h1>Work Experience</h1>
+    
+        <div class="timeline-item">
+            <div class="vertical-stick"></div>
+            <div class="timeline-content">
+                
+                <img src="assets/MFP.jpg" alt="MyFellowPet Logo" class="company-logo">
+                <div class="timeline-date">2025</div>
+                <h3>MyFellowPet</h3>
+                <p>Started as a junior developer working on frontend Developer in the domain of Flutter</p>
+            </div>
+        </div>
+
+      
+        <div class="timeline-item">
+            <div class="vertical-stick"></div>
+            <div class="timeline-content">
+              
+                <img src="assets/DRDO.png"alt="DRDO Logo" class="company-logo">
+                <div class="timeline-date">2025-2026</div>
+                <h3>Centre For Advanced Systems</h3>
+                <p>Promoted to senior engineer leading a team of five developers.</p>
+            </div>
+        </div>
+
+    </div>
+         
+    
+</div>
+    </section>
+</main>
+       
+<footer>
+    <footer class="footer-first">
+        NagaSayana's Developer Portfolio
+    </footer>
+    <footer class="footer-second">
+        <Ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About Me</a></li>
+                <li><a href="/">Services</a></li>
+                <li><a href="/">Projects</a></li>
+                <li><a href="/">Contact Me</a></li>
+            </Ul>
+    </footer>
+
+</footer>
+   <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+
+    <script>
+                const typed = new Typed('#element', {
+            strings: [
+                "Crack the Code, Change the World.",
+                "Embrace the Bugs, Master the Code."
+            ],
+            typeSpeed: 50,
+            backDelay:500,
+            backSpeed:30,
+            loop:true,
+            });
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
