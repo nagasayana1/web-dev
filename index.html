@@ -18,24 +18,52 @@
 <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Shadows+Into+Light&display=swap" rel="stylesheet">
 
 <body>
-    
+        
 
  <header>
     <nav>
         <div class="left">
            NagaSayana's Portfolio
         </div>
-        <div class="right">
-            <Ul>
+
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div class="right" id="navMenu">
+            <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="/">About Me</a></li>
                 <li><a href="/">Services</a></li>
                 <li><a href="/">Projects</a></li>
                 <li><a href="/">Contact Me</a></li>
-            </Ul>
+            </ul>
         </div>
     </nav>
- </header>
+</header>
+
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('navMenu');
+
+    hamburger.addEventListener('click', () => {
+        const isOpen = navMenu.classList.toggle('active');
+        hamburger.classList.toggle('active');
+        document.body.classList.toggle('menu-open');
+        hamburger.setAttribute('aria-expanded', isOpen);
+    });
+
+    navMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            navMenu.classList.remove('active');
+            hamburger.classList.remove('active');
+            document.body.classList.remove('menu-open');
+            hamburger.setAttribute('aria-expanded', false);
+        });
+    });
+</script>
 
 <main>
     <section class="firstSection">
